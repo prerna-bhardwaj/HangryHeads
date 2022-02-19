@@ -38,7 +38,7 @@ export default function VerifyOTP({ navigation }) {
           />
         </TouchableOpacity>
 
-          <Image 
+          <Image  
               style={{ width: wp("70%"), height: wp("60%") }}
               source={require("../../assets/images/coffee.png")}
           />
