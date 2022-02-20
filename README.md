@@ -24,18 +24,31 @@ The framework for the app is provided by figma
 -Onboarding screen
 -Login and authentication
 -Sponsor 
--Find Food 
+-Food Rescue 
+-View Foods nearby through maps 
 -Scoreboard
 
 ## FAQ
 
-#### Who is HungryHeads Targeted towards?
+## Inspiration
+Even though there are several food drives, not everyone had access to them due to a lack of information and geographical difficulties. We decided to create a space where all information about food drives and donation spots can be accessed through one space.
 
+##How we built it
+We build the project using react native and firebase databases. The framework was designed using Figma. We've incorporated the use of Twilio for user authentication. 
+
+## Accomplishments that we're proud of
+We were able to create several interactive pages where users have the opportunity to create events for donating food, find local food rescue operations, and ensure food accessibility for all. We also decided to create a page for college students to use their meal swipes in order to allow people from lower-income backgrounds to find food as well.
+
+
+## What we learned
+We learned that beyond creating the app, it's important to advertise it in a way so that both local vendors as well as those in need, can interact with one another to create daily events. In doing so, it would be important to partner with certain organizations are that willing to sponsor "Food rescue" events. Additionally, since a part of the app caters to college students, it would be essential to partner with universities that are willing for meal swipes to be interchanged for monetary value in different areas.
+
+#### Who is HungryHeads Targeted towards?
 Anyone! The app relies heavily on users interacting with one another in order to create a network of events
 
-#### What's next for HungryHeads?
+## What's next for HungryBirds?
+We've hoping to build onto the ideas of this project to create a stronger userbase and allow more people reap the benefits of an open food sharing marketplace.  
 
-We're hoping to develop this app and test different ways to make the app more interactive and appealing for our users. 
 
 
 
