@@ -35,6 +35,29 @@ The wireframe for the app is developed on Figma
 - Find Food
 - Top Picks
 
+## Setup
+
+Clone the github Repo of HungryBirds (alternatively, HangryHeads) by running:
+
+```
+git clone https://github.com/prerna-bhardwaj/HangryHeads
+```
+Make sure you have the lastest version of node.js installed on your system before you run the project.
+
+The `package.json` file contains the list all React Native packages required to run the project.
+Install the modules using the following command :
+
+```
+npm install
+```
+To run the application use :
+```
+npm start  OR expo start
+```
+
+You are good to go !!
+
+
 ## FAQ
 
 #### Who is HungryHeads Targeted towards?
