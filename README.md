@@ -24,9 +24,6 @@ The framework used for developing the app is React Native.
 The wireframe for the app is developed on Figma
 
 ## Features
-- 
-
-## Screens
 - Onboarding screen
 - Login and authentication
 - Sponsor Food
