@@ -40,7 +40,7 @@ We're hoping to develop this app and test different ways to make the app more in
 
 
 ## Links to resources
-<a href="https://www.figma.com/file/3e2vh6nMaxvPJ4z0VYerrV/HungryBirds?node-id=0%3A1" target="_blank">Figma</a>
+<a href="https://www.figma.com/file/S5oOqjIbYf9ZDiSg7narfE/HungryHead?node-id=0%3A1" target="_blank">Figma</a>
 
 <a href="https://docs.google.com/presentation/d/11eBmW3ovDhlineJHJuFc5WSNCcS2Wm1oKCHz8BBhzqU/edit?usp=sharing" target="_blank">Presentation</a>
 
