@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://ruhackhers.org/">
-    <img alt="HackHERS" src="https://ruhackhers.org/images/logos/hackhers2022.png width="60" />
+    <img alt="HackHERS" src="https://ruhackhers.org/images/logos/hackhers2022.png" width="60" />
   </a>
 </p>
 
