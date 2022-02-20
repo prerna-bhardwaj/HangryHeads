@@ -1,7 +1,7 @@
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import SponsorFood from "../screens/foodStack/sponsorFood";
 import FindFood from "../screens/foodStack/findfood";
-import ScoreBoard from "../screens/foodStack/scoreBoard";
+import TopPicks from "../screens/foodStack/topPicks";
 import { Ionicons } from '@expo/vector-icons'; 
 import { MaterialIcons } from '@expo/vector-icons'; 
 
@@ -18,17 +18,8 @@ function FoodStack({ route }) {
         headerShown: false,
       }}
     >
-      <Tab.Screen
-        name="ScoreBoard"
-        component={ScoreBoard}
-        options={{
-          tabBarLabel: "Top Picks",
-          tabBarIcon: ({ color }) => (
-            <MaterialIcons name="score" size={24} color={color} />          
-          ),
-        }}
-      />
-      <Tab.Screen
+
+<Tab.Screen
         name="FindFood"
         component={FindFood}
         options={{
@@ -38,6 +29,18 @@ function FoodStack({ route }) {
           ),
         }}
       />
+      <Tab.Screen
+        name="TopPicks"
+        component={TopPicks}
+        options={{
+          tabBarLabel: "Top Picks",
+          tabBarIcon: ({ color }) => (
+            <MaterialIcons name="score" size={24} color={color} />          
+          ),
+        }}
+      />
+      
+      
       <Tab.Screen
         name="SponsorFood"
         component={SponsorFood}

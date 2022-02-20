@@ -25,12 +25,6 @@ export default function Login({ navigation }) {
   const validateUser = async () => {
     console.log(username, password);
     navigation.navigate("FoodStack");
-    // if (validateField(username) && validateField(password)) {
-    //   await logUserIn(username, password, dispatch, navigation);
-    // } else {
-    //   console.log("Error");
-    //   Alert.alert("Invalid Credentials", "Please fill in all the fields.");
-    // }
   };
 
   const validateField = (field) => {
