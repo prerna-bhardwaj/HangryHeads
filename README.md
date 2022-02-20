@@ -1,3 +1,4 @@
+[![Logo for HackHERs 2022](https://ruhackhers.org/images/logos/hackhers2022.png)](https://ruhackhers.org/)
 
 # Hungry Heads
 
