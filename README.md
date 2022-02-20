@@ -19,13 +19,19 @@ This project was created through the use of Visual Studio Code. The following pa
 - node.js
 - npm
 
-The framework for the app is provided by figma
+The framework used for developing the app is React Native.
+
+The wireframe for the app is developed on Figma
+
 ## Features
--Onboarding screen
--Login and authentication
--Sponsor 
--Find Food 
--Scoreboard
+- 
+
+## Screens
+- Onboarding screen
+- Login and authentication
+- Sponsor Food
+- Find Food
+- Top Picks
 
 ## FAQ
 
