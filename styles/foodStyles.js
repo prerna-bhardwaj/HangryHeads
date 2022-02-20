@@ -11,13 +11,14 @@ const foodStyles = StyleSheet.create({
         padding: 20
     },
     headerText: {
+        marginTop: 20,
         fontFamily: 'poppins-semibold',
         fontSize: 30,
         marginHorizontal: 20,
         textAlign: 'center',
         borderBottomColor: '#000',
         borderBottomWidth: 2,
-        paddingBottom: 15,
+        paddingBottom: 10,
         marginBottom: 10,
     },
     outletName: {

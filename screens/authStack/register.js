@@ -21,20 +21,15 @@ import { ScrollView } from "react-native-gesture-handler";
 
 export default function Register({ navigation }) {
   const [username, setUsername] = useState("");
+  const [name, setName] = useState("");
   const [contact, setContact] = useState("");
   const [password, setPassword] = useState("");
-  const [otp, setOtp] = useState("");
-  const [displayOtp, setDisplayOtp] = useState(false);
 
   const registerUser = () => {
-    console.log(username, password, contact);
+    console.log(username, name, password, contact);
     console.log("Registering User");
     navigation.navigate("VerifyOTP");
   };
-
-  const verifyOtp = () => {
-    console.log(otp);
-  }
 
   return (
     <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
@@ -66,6 +61,17 @@ export default function Register({ navigation }) {
         </View>
 
         <View style={authStyles.inputContainer}>
+          <Text style={authStyles.inputText}>Name</Text>
+          <TextInput
+            style={authStyles.formInput}
+            placeholder="Enter Name"
+            placeholderTextColor="#B2B2B2"
+            value={name}
+            onChangeText={setName}
+          />
+        </View>
+
+        <View style={authStyles.inputContainer}>
           <Text style={authStyles.inputText}>Contact</Text>
           <TextInput
             style={authStyles.formInput}
@@ -91,29 +97,6 @@ export default function Register({ navigation }) {
         </View>
 
         <FlatButton text="Register" onPressHandler={registerUser} />
-
-        {
-          displayOtp === true ? 
-          <View style={{ marginTop: 20}}>
-            <View style={authStyles.inputContainer}>
-              <Text style={authStyles.inputText}>OTP : </Text>
-              <TextInput
-                style={authStyles.formInput}
-                placeholder="Enter OTP"
-                placeholderTextColor="#B2B2B2"
-                value={otp}
-                onChangeText={setOtp}
-              />
-            </View>
-
-            <View style={{ marginLeft: wp('15%') }}>
-              <FlatButton text="Verify OTP" onPressHandler={verifyOtp} />
-            </View>
-
-          </View>
-          :
-          <View></View>
-        }
 
         <View style={authStyles.bodyTextWrapper}>
           <Text style={authStyles.bodyText}>Already have an account ?</Text>

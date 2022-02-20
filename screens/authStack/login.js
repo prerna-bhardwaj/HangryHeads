@@ -17,14 +17,24 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
+import { logUserIn, setLoggedIn } from "../../redux/user/userAction";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function Login({ navigation }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+  const dispatch = useDispatch();
+
   const validateUser = async () => {
-    console.log(username, password);
-    navigation.navigate("FoodStack");
+    if(validateField(username) && validateField(password)) {
+      console.log(username, password);
+      dispatch(setLoggedIn(username));
+      navigation.navigate("FoodStack");
+    }
+    else {
+      Alert.alert("Invalid details", "Please fill in all the fields.")
+    }
   };
 
   const validateField = (field) => {

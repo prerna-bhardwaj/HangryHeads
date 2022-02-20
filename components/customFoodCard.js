@@ -3,7 +3,7 @@ import { View, Text, Image, StyleSheet } from "react-native";
 import { widthPercentageToDP as wp, heightPercentageToDP as hp, widthPercentageToDP } from "react-native-responsive-screen";
 
 
-export default function BigFoodCard({name, description, price, image, ...props}) {
+export default function CustomFoodCard({name, description, price, image, ...props}) {
 
     console.log(image)
     return (       
@@ -21,42 +21,48 @@ export default function BigFoodCard({name, description, price, image, ...props})
 
 const styles = StyleSheet.create({
     itemCard: {
-        shadowColor: 'red',
+        shadowColor: '#171717',
         shadowOffset: {width: 10, height: 10},
-        shadowOpacity: 0.2,
+        flexDirection: 'row',
+        shadowOpacity: 0.4,
         shadowRadius: 3,
         elevation: 3,
         backgroundColor: '#fff',
         width: widthPercentageToDP('89%'),
-        height: 200,
+        height: 120,
         marginBottom: 15,
-        marginRight: 20,
+        marginRight: 15,
         borderRadius: 10,
+
     },
     itemWrapper: {
         padding: 10,
     },
     foodImage: {
-        width: widthPercentageToDP('89%'),
-        height: 100,
-        borderRadius: 10
+        width: 150,
+        height: 120,
+        borderRadius: 5
     },
     itemName: {
         fontFamily: 'poppins-semibold',
-        fontSize: 20,
+        fontSize: 17,
     },
     itemDescription: {
         fontFamily: 'ubuntu-regular',
-        fontSize: 15,
+        width: wp('45%'),
+        fontSize: 14,
         color: '#6B6B6B'
     },
     itemPrice: {
         position: 'absolute',
         bottom: 6,
         fontFamily: 'poppins-semibold',
-        fontSize: 20,
-        right: 10,
+        fontSize: 17,
+        right: 6,
         color: '#4A80F0'
+    },
+    itemQuantity: {
+
     }
 });
   

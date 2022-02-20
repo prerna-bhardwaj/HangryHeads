@@ -1,10 +1,8 @@
 import { USER_LOGGED_IN, USER_LOGGED_OUT } from "./userTypes";
 
 const initialState = {
-  userId: null,
   isAuthenticated: false,
   username: "",
-  email: "",
 };
 
 const userReducer = (state = initialState, action) => {
@@ -12,18 +10,14 @@ const userReducer = (state = initialState, action) => {
     case USER_LOGGED_IN:
       return {
         ...state,
-        userId: action.userId,
-        isAuthenticated: true,
-        email: action.email,
         username: action.username,
+        isAuthenticated: true,
       };
 
     case USER_LOGGED_OUT:
       return {
         ...state,
-        userId: null,
         isAuthenticated: false,
-        email: "",
         username: "",
       };
 

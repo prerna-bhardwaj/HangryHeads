@@ -21,18 +21,17 @@ export default function SmallFoodCard({name, description, price, image, ...props
 
 const styles = StyleSheet.create({
     itemCard: {
-        shadowColor: '#171717',
-        shadowOffset: {width: 3, height: 4},
-        shadowOpacity: 0.2,
+        shadowColor: '#272727',
+        shadowOffset: {width: 10, height: 10},
+        shadowOpacity: 1,
         shadowRadius: 3,
+        elevation: 3,
         width: 200,
         height: 150,
         marginBottom: 15,
         marginRight: 15,
         borderRadius: 10,
-        borderWidth: 1,
-        borderColor: '#b2b2b2'
-
+        backgroundColor: '#fff'
     },
     itemWrapper: {
         padding: 5,

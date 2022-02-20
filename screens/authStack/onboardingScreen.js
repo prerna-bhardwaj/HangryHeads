@@ -1,15 +1,22 @@
-import {React, useState} from "react";
+import {React, useEffect, useState} from "react";
 import { Image, StyleSheet, View } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { Text } from "react-native-paper";
 import { Ionicons } from '@expo/vector-icons'; 
 import { heightPercentageToDP, widthPercentageToDP } from "react-native-responsive-screen";
-// import GetLocation from 'react-native-get-location'
-// import Geolocation from '@react-native-community/geolocation';
-
+import { outletData } from "../../global";
+import { useDispatch } from "react-redux";
+import { addOutletDetails, fetchAllFoodItems } from "../../redux/outlet/outletAction";
 
 const OnboardingScreen = ({navigation}) => {
   const [currSlide, setCurrSlide] = useState(1);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(addOutletDetails(outletData));
+    dispatch(fetchAllFoodItems(outletData));
+  }, []);
+
   const data = [
     {
       title: "Some title1",
@@ -41,20 +48,7 @@ const OnboardingScreen = ({navigation}) => {
       setCurrSlide(currSlide+1);
       setCurrData(data[currSlide-1]);
     }
-    // Geolocation.setRNConfiguration(config);
-    // Geolocation.getCurrentPosition(info => console.log(info));
-
-    // GetLocation.getCurrentPosition({
-    //       enableHighAccuracy: true,
-    //       timeout: 15000,
-    //   })
-    //   .then(location => {
-    //       console.log(location);
-    //   })
-    //   .catch(error => {
-    //       const { code, message } = error;
-    //       console.warn(code, message);
-    //   })
+    
   }
 
   const previousSlide = () => {

@@ -27,7 +27,7 @@ const authStyles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 25,
     letterSpacing: -0.33,
-    color: "#000",
+    color: "#6B6B6B",
   },
   formInput: {
     fontWeight: "400",

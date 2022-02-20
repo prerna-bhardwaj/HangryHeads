@@ -6,6 +6,9 @@ import AppLoading from "expo-app-loading";
 import * as Font from "expo-font";
 import { useState } from "react";
 import FoodStack from "./routes/foodStack";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+
 
 const getFonts = async () => {
   await Font.loadAsync({
@@ -21,11 +24,11 @@ export default function App() {
 
   if (fontsLoaded) {
     return (
-      // <Provider store={store}>
+      <Provider store={store}>
         <NavigationContainer>
-          <FoodStack />
+          <RootStack />
         </NavigationContainer>
-      // </Provider>
+      </Provider>
     );
   } else {
     return (

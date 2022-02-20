@@ -29,6 +29,18 @@ function FoodStack({ route }) {
           ),
         }}
       />
+      
+<Tab.Screen
+        name="SponsorFood"
+        component={SponsorFood}
+        options={{
+          tabBarLabel: "Sponsor",
+          tabBarIcon: ({ color }) => (
+            <Ionicons name="md-fast-food-sharp" size={24} color={color} />          
+          ),
+        }}
+      />
+
       <Tab.Screen
         name="TopPicks"
         component={TopPicks}
@@ -36,18 +48,6 @@ function FoodStack({ route }) {
           tabBarLabel: "Top Picks",
           tabBarIcon: ({ color }) => (
             <MaterialIcons name="score" size={24} color={color} />          
-          ),
-        }}
-      />
-      
-      
-      <Tab.Screen
-        name="SponsorFood"
-        component={SponsorFood}
-        options={{
-          tabBarLabel: "Sponsor",
-          tabBarIcon: ({ color }) => (
-            <Ionicons name="md-fast-food-sharp" size={24} color={color} />          
           ),
         }}
       />
